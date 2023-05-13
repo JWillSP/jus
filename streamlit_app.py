@@ -10,7 +10,7 @@ def main():
   # Make API request to get data
 
   # Create a text input field for searching
-  search_term = st.text_input('Busque pelo nome do estudante')
+  search_term = st.text_input('Busque pelo nome do estudante', value="digite aqui")
 
   # Filter DataFrame based on search term
   if search_term:
