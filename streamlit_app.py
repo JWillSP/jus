@@ -13,7 +13,7 @@ def main():
   search_term = st.text_input('Busque pelo nome do estudante', value="digite aqui")
 
   # Filter DataFrame based on search term
-  if search_term:
+  if search_term and search_term!="digite aqui":
     response = httpx.get(
       'https://freq-willapp.herokuapp.com/allstudents/2023%401124856')
     data = response.json()
